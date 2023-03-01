@@ -1,0 +1,14 @@
+Host: 192.168.1.1 (gw.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.5 (orbi.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.6 (orbi-sat-upstairs.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.7 (orbi-sat-office.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.46 (keg.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.114 (OBi202.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.200 (api.infra.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.210 ()	Ports: 80/open/tcp//http///
+Host: 192.168.1.215 (mqtt.services.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.220 (svc-node-0.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.221 (svc-node-1.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.230 ()	Ports: 80/open/tcp//http///
+Host: 192.168.1.253 (office-sw-1.house)	Ports: 80/open/tcp//http///
+Host: 192.168.1.254 (office-sw-0.house)	Ports: 80/open/tcp//http///

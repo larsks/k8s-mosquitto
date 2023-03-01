@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto
+spec:
+  template:
+    spec:
+      containers:
+        - name: mosquitto
+          image: docker.io/eclipse-mosquitto
+          args:
+            - mosquitto
+            - -c
+            - /config/mosquitto.conf
+          ports:
+            - name: mqtt
+              containerPort: 1883
+          volumeMounts:
+            - name: mosquitto-config
+              mountPath: /config
+            - name: mosquitto-pwfile
+              mountPath: /pwfile
+      volumes:
+        - name: mosquitto-config
+          configMap:
+            name: mosquitto-config
+        - name: mosquitto-pwfile
+          secret:
+            secretName: mosquitto-pwfile
