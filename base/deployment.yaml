@@ -20,6 +20,8 @@ spec:
               mountPath: /config
             - name: mosquitto-pwfile
               mountPath: /pwfile
+            - name: mosquitto-data
+              mountPath: /data
       volumes:
         - name: mosquitto-config
           configMap:
@@ -27,3 +29,6 @@ spec:
         - name: mosquitto-pwfile
           secret:
             secretName: mosquitto-pwfile
+        - name: mosquitto-data
+          persistentVolumeClaim:
+            claimName: mosquitto-data
