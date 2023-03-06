@@ -22,6 +22,11 @@ spec:
               mountPath: /pwfile
             - name: mosquitto-data
               mountPath: /data
+      securityContext:
+        runAsGroup: 1883
+        runAsUser: 1883
+        fsGroup: 1883
+        runAsNonRoot: true
       volumes:
         - name: mosquitto-config
           configMap:
